@@ -1,0 +1,24 @@
+POST http://localhost:9999/sign
+Content-Type: application/json
+
+{
+    "message": "Hello World! CCSignedIO lives."
+}
+
+###
+
+POST http://localhost:9999/verify
+Content-Type: application/json
+
+{
+    "signed": "SGVsbG8gV29ybGQhIENDU2lnbmVkSU8gbGl2ZXMu:LS0tLS1CRUdJTiBQR1AgU0lHTkFUVVJFLS0tLS0KCnduVUVBUllLQUNjRmdtU2tkTG9Ka0JuUUd2cjAzWE11RmlFRWZwVWpCQ3Vhak51TmkxZ2lHZEFhK3ZUZApjeTRBQU5yYUFRQ2c5MTFJM3JFSFRCWmJvZThra0ZQOHpkaWRHUkpNT2MrK1dRZzFNYnFjendFQTAyRU4KWk9rWGVuaDlMR0FVLzNzMGpZdE9pQ0dQRzlHTktPVVF3b2h1T2drPQo9SzVjKwotLS0tLUVORCBQR1AgU0lHTkFUVVJFLS0tLS0K"
+}
+
+###
+
+POST http://localhost:9999/verifyOne
+Content-Type: application/json
+
+{
+    "signed": "Q2FsbCBieSBjYWxsIHB1YmxpYyBrZXkgc2V0dXAgd29ya3Mu:LS0tLS1CRUdJTiBQR1AgU0lHTkFUVVJFLS0tLS0KCnduVUVBUllLQUNjRmdtU2tkNGtKa0JuUUd2cjAzWE11RmlFRWZwVWpCQ3Vhak51TmkxZ2lHZEFhK3ZUZApjeTRBQUw4UEFRQzYrbnhNb0JseGxlZm1pRjl0VkgvMnQ2K1BTSkRMU2NObVArdXpucDVFandFQTdHRWIKbWRVSkppYW9OMnc1bDJWOWpBblhJMExuYXQ0SFNUazU5UjFrRndnPQo9c1N1SAotLS0tLUVORCBQR1AgU0lHTkFUVVJFLS0tLS0K"
+}
