@@ -1,4 +1,4 @@
-# Documentation for Node.js Worker Pool and Middleware
+# Documentation for Node.js Secure IO
 
 This Node.js module includes two parts:
 
